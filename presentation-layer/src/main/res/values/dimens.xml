@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<resources>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="font_small">8sp</dimen>
+    <dimen name="font_medium">12sp</dimen>
+    <dimen name="font_large">16sp</dimen>
+    <dimen name="font_x_large">20sp</dimen>
+
+</resources>

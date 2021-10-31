@@ -1,0 +1,63 @@
+ext.versions = [
+
+        compileSdkVersion       : 30,
+        targetSdkVersion        : 30,
+        minSdkVersion           : 21,
+
+        appVersionCode          : 1,
+        appVersionName          : '1.0.0',
+
+        buildToolsVersion       : '30.0.3',
+
+        gsonVersion             : '2.8.8',
+
+        coroutinesVersion       : '1.5.2',
+
+        roomVersion             : '2.3.0',
+        roomCoroutineVersion    : '2.1.0-alpha04',
+        roomPagingVersion       : '2.4.0-beta01',
+
+        retrofitVersion         : "2.8.1",
+
+        lifecycle               : "2.2.0",
+
+        glideVersion            : "4.12.0",
+
+        hiltVersion             : "2.35.1",
+
+        paging_version          : "3.0.0"
+]
+
+ext.libraries = [
+
+        gson                        : "com.google.code.gson:gson:$versions.gsonVersion",
+
+        coroutinesCore              : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutinesVersion",
+        coroutinesAndroid           : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutinesVersion",
+
+        roomRuntime                 : "androidx.room:room-runtime:$versions.roomVersion",
+        roomCompiler                : "androidx.room:room-compiler:$versions.roomVersion",
+        roomTesting                 : "androidx.room:room-testing:$versions.roomVersion",
+        roomKTX                     : "androidx.room:room-ktx:$versions.roomVersion",
+        roomCoroutine               : "androidx.room:room-coroutines:$versions.roomCoroutineVersion",
+        roomPaging                  : "androidx.room:room-paging:$versions.roomPagingVersion",
+
+        retrofit                    : "com.squareup.retrofit2:retrofit:$versions.retrofitVersion",
+        retrofitGsonConverter       : "com.squareup.retrofit2:converter-gson:$versions.retrofitVersion",
+        retrofitCoroutineAdapter    : "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2",
+
+        lifecycleRuntime            : "androidx.lifecycle:lifecycle-runtime:$versions.lifecycle",
+        lifecycleCompiler           : "androidx.lifecycle:lifecycle-compiler:$versions.lifecycle",
+        lifecycleViewmodelKtx       : "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle",
+        lifecycleLivedataKtx        : "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycle",
+
+        hilt                        : "com.google.dagger:hilt-android:$versions.hiltVersion",
+        hiltCompiler                : "com.google.dagger:hilt-android-compiler:$versions.hiltVersion",
+
+        glide                       : "com.github.bumptech.glide:glide:$versions.glideVersion",
+        glideCompiler               : "com.github.bumptech.glide:compiler:$versions.glideVersion",
+
+        paging                      : "androidx.paging:paging-runtime:$versions.paging_version",
+        pagingTesting               : "androidx.paging:paging-common:$versions.paging_version"
+
+]

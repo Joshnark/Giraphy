@@ -1,0 +1,8 @@
+include ':domain_layer'
+include ':data_layer'
+include ':framework_layer'
+include ':domain_layer'
+include ':use_cases_layer'
+include ':presentation-layer'
+include ':app'
+rootProject.name = "My Amazing Gif App"

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary_color">#8E86FC</color>
+
+    <color name="white">#fff</color>
+    <color name="gallery_gray">#eeeeee</color>
+    <color name="dusty_gray">#999999</color>
+    <color name="gray">#777777</color>
+    <color name="cod_gray">#111111</color>
+
+    <color name="bittersweet_red">#F8766F</color>
+    <color name="pastel_green">#ABEDAB</color>
+    <color name="haze_yellow">#FFFFA9</color>
+    <color name="jordy_blue">#99BBE4</color>
+    <color name="pigy_pink">#FFD5E8</color>
+
+</resources>

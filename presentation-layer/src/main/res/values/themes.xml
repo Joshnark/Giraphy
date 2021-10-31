@@ -1,0 +1,8 @@
+<resources>
+  <style name="Theme.MyAmazingGifApp.NoActionBar" >
+  <item name="windowActionBar">false</item>
+  <item name="windowNoTitle">true</item>
+</style>
+  <style name="Theme.MyAmazingGifApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+  <style name="Theme.MyAmazingGifApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

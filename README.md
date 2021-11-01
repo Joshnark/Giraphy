@@ -7,26 +7,26 @@ I really didn't have any better idea for a name
 Ok, I will sumarize very quickly what I have done based on what FreshWorks asked. 
 This text have been done very quickly because time shortage due to my current job, so much job, so I apologize for ortographic english mistakes.
 
-# 1. ALL GIF MUST BE RUNNING
+# 1. All gif must be running
 
 Done, fairly easy, Glide is quite one of the best libraries around for image and Gif management. I also noticed that Giphy API lets you work with .mp4 files, if that were the case, Exoplayer is the best library for video display in Android.
 
 -------------------------------------------------------------------------
 
-# 2. USER MUST SEE LIST OF TRENDING GIFS WHEN LAUNCHING THE APP
+# 2. User must see a list of trending gifs when launching the app
 
 Done, also it is in a pretty instagram like UI because I love pretty UI.
 
 -------------------------------------------------------------------------
 
-# 3. THE USER MUST BE ABLE TO TYPE ANY SEARCH TERM IN THE SEARCH AREA AND HAVE THE VIEW REFRESHED WITH RESULTS BLABLABLA
+# 3. The user must be able to type any search term into a search area on the first screen and have the view refresh the list
 
 Done, in the same first view as asked.
 
 -------------------------------------------------------------------------
 
-# 4. THE USER MUST SEE A GRID OF HIS/HER FAVOURITE GIFS IN SECOND SCREEN
-# 5. THE USER MUST BE ABLE TO ADD AND REMOVE GIFS TO AND FROM THEIR FAVOURITES
+# 4. The user must see a grid of his/her favourite GIFs in the second screen
+# 5. The user must be able to add and remove GIFS to and from thei favourites
 
 Done, with Room of course.
 

@@ -26,7 +26,6 @@ Done, in the same first view as asked.
 -------------------------------------------------------------------------
 
 # 4. THE USER MUST SEE A GRID OF HIS/HER FAVOURITE GIFS IN SECOND SCREEN
-and
 # 5. THE USER MUST BE ABLE TO ADD AND REMOVE GIFS TO AND FROM THEIR FAVOURITES
 
 Done, with Room of course.
@@ -34,7 +33,6 @@ Done, with Room of course.
 -------------------------------------------------------------------------
 
 # 6. There should be one activity with two fragments
-and 
 # 7. The fragments should be swipeable unsing a TabLayout and ViewPager
 
 Done, with ViewPager2.

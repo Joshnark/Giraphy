@@ -13,14 +13,12 @@ data class GifEntity(
     val id: String,
     @SerializedName("embed_url")
     val embedUrl: String?,
-    @SerializedName("slug")
-    val slug: String?,
     @SerializedName("title")
     val title: String?,
-    @SerializedName("type")
-    val type: String?,
     @SerializedName("username")
     val username: String?,
+    @SerializedName("source_tld")
+    val source: String?,
 
     val cachedUrl: String?,
     val isLiked: Boolean
@@ -30,12 +28,11 @@ data class GifEntity(
         return Gif(
             id = this.id,
             embedUrl = this.embedUrl,
-            slug = this.slug,
             title = this.title,
-            type = this.type,
-            username = this.username,
             isLiked = this.isLiked,
-            cachedUrl = this.cachedUrl
+            cachedUrl = this.cachedUrl,
+            username = this.username,
+            source = this.source
         )
     }
 
@@ -44,12 +41,11 @@ data class GifEntity(
             return GifEntity(
                 id = gif.id,
                 embedUrl = gif.embedUrl,
-                slug = gif.slug,
                 title = gif.title,
-                type = gif.type,
-                username = gif.username,
                 isLiked = gif.isLiked,
-                cachedUrl = gif.images?.original?.url
+                cachedUrl = gif.images?.original?.url,
+                username = gif.username,
+                source = gif.source
             )
         }
 

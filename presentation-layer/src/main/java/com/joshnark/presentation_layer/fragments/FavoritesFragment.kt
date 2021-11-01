@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.joshnark.domain_layer.models.GenericResult
 import com.joshnark.domain_layer.models.exceptions.NoMoreItemsException
+import com.joshnark.presentation_layer.R
 import com.joshnark.presentation_layer.adapters.FavoritesAdapter
 import com.joshnark.presentation_layer.adapters.LoadAdapter
 import com.joshnark.presentation_layer.databinding.FragmentFavoritesBinding
@@ -30,8 +31,6 @@ class FavoritesFragment : Fragment() {
     private val gifMainViewModel: GifMainViewModel by activityViewModels()
 
     private var favoritesAdapter: FavoritesAdapter? = null
-
-    private var configuration: Configuration? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -65,7 +64,7 @@ class FavoritesFragment : Fragment() {
                     favoritesAdapter?.refresh()
                 }
                 is GenericResult.Error -> {
-                    Toast.makeText(requireContext(), "An error ocurred", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.error_ocurred), Toast.LENGTH_SHORT).show()
                 }
                 else -> {
                 }
@@ -112,11 +111,11 @@ class FavoritesFragment : Fragment() {
         binding.viewError.root.show()
         when (exception) {
             is NoMoreItemsException -> {
-                binding.viewError.textViewErrorMessage.text = "You don't have favorites yet"
+                binding.viewError.textViewErrorMessage.text = getString(R.string.dont_have_favorites)
                 binding.viewError.buttonRetry.hide()
             }
             else -> {
-                binding.viewError.textViewErrorMessage.text = "Uh Oh! \n Looks like an error ocurred :c"
+                binding.viewError.textViewErrorMessage.text = getString(R.string.generic_error)
                 binding.viewError.buttonRetry.show()
             }
         }

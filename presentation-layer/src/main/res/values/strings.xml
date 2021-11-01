@@ -2,4 +2,18 @@
 
     <string name="splash_screen">Obligatory Meme Splash Screen lol</string>
     <string name="sample_text_splash_screen">App is sooo original that it doesn\&#39;t even needs a name lol</string>
+
+    <string name="categories">Categories</string>
+    <string name="favorite_gifs">Favorite Gifs</string>
+
+    <string name="retry">Retry!</string>
+
+    <string name="loading_gifs">Loading your gifs :)</string>
+
+    <string name="error_ocurred">An error ocurred</string>
+    <string name="error_loading_categories">Error loading categories</string>
+    <string name="no_more_items_error">No items to load xD</string>
+    <string name="generic_error">Looks like an error happened :c</string>
+
+    <string name="dont_have_favorites">You don\'t have favorites yet</string>
 </resources>

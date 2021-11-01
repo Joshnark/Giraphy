@@ -18,6 +18,7 @@ import com.joshnark.domain_layer.models.GenericResult.Error
 import com.joshnark.domain_layer.models.Tag
 import com.joshnark.domain_layer.models.exceptions.NoMoreItemsException
 import com.joshnark.presentation_layer.CategoriesViewModel
+import com.joshnark.presentation_layer.R
 import com.joshnark.presentation_layer.activities.MainActivity
 import com.joshnark.presentation_layer.adapters.GifListAdapter
 import com.joshnark.presentation_layer.adapters.LoadAdapter
@@ -79,7 +80,7 @@ class GifListFragment : Fragment(), NavigationView.OnNavigationItemSelectedListe
                     gifsAdapter?.updateLike(it.data)
                 }
                 is Error -> {
-                    Toast.makeText(requireContext(), "An error ocurred", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.error_ocurred), Toast.LENGTH_SHORT).show()
                 }
                 else -> {}
             }
@@ -91,7 +92,7 @@ class GifListFragment : Fragment(), NavigationView.OnNavigationItemSelectedListe
                     setParentNavigationDrawerListener(it.data)
                 }
                 is Error -> {
-                    Toast.makeText(requireContext(), "Error loading categories", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), getString(R.string.error_loading_categories), Toast.LENGTH_SHORT).show()
                 }
                 else -> {}
             }
@@ -165,9 +166,9 @@ class GifListFragment : Fragment(), NavigationView.OnNavigationItemSelectedListe
         binding.viewError.root.show()
         when(exception) {
             is NoMoreItemsException -> {
-                binding.viewError.textViewErrorMessage.text = "No items to load xD"
+                binding.viewError.textViewErrorMessage.text = getString(R.string.no_more_items_error)
             }
-            else -> binding.viewError.textViewErrorMessage.text = "Looks like an error happened :c"
+            else -> binding.viewError.textViewErrorMessage.text = getString(R.string.generic_error)
         }
     }
 

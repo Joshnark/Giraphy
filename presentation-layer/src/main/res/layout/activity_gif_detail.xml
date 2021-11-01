@@ -7,5 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".activities.GifDetailActivity">
 
+    <com.joshnark.presentation_layer.views.GlideImageView
+        android:id="@+id/imageView_blurBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

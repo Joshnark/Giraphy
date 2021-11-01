@@ -1,9 +1,11 @@
 package com.joshnark.presentation_layer.views
 
+import android.content.Intent
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.joshnark.domain_layer.models.Gif
@@ -22,6 +24,7 @@ class GifItemView(private val binding: ItemGifBinding): RecyclerView.ViewHolder(
         setUserData(gif, binding.imageViewUserPhoto, binding.textViewUserName)
         setTitle(gif, binding.textViewTitle)
         setLike(gif, binding.buttonLike, onLikeListener)
+        setShare(gif, binding.buttonShare)
         progressBarLoadingGif.addCustomAnimation()
     }
 
@@ -59,6 +62,19 @@ class GifItemView(private val binding: ItemGifBinding): RecyclerView.ViewHolder(
         buttonLike.setImageResource(if(gif.isLiked) R.drawable.ic_heart_solid else R.drawable.ic_heart_solid_unfavorited)
         buttonLike.setOnSafeClickListener{
             onLikeListener.invoke(gif)
+        }
+    }
+
+    private fun setShare(gif: Gif, buttonShare: AppCompatImageView) {
+        buttonShare.setOnSafeClickListener {
+            val sendIntent: Intent = Intent().apply {
+                action = Intent.ACTION_SEND
+                putExtra(Intent.EXTRA_TEXT, gif.embedUrl)
+                type = "text/plain"
+            }
+
+            val shareIntent = Intent.createChooser(sendIntent, null)
+            startActivity(binding.root.context, shareIntent, null)
         }
     }
 

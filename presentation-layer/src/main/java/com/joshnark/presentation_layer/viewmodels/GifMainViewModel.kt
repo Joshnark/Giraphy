@@ -22,9 +22,6 @@ class GifMainViewModel @Inject constructor(
     private val _gifFavoritedLiveData = MutableLiveData<GenericResult<Gif>?>()
     val gifFavoritedLiveData: LiveData<GenericResult<Gif>?> = _gifFavoritedLiveData
 
-    private val _categoriesLiveData = MutableLiveData<GenericResult<Tag>?>()
-    val categoriesLiveData: LiveData<GenericResult<Tag>?> = _categoriesLiveData
-
     suspend fun getGifs(keyword: String): LiveData<PagingData<GifItemType>> {
         return if (keyword.isEmpty()) {
             getTrendingGifsUseCase()

@@ -2,7 +2,6 @@ package com.joshnark.presentation_layer.activities
 
 import android.os.Bundle
 import android.view.Menu
-import android.view.SubMenu
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.content.res.AppCompatResources
 import com.google.android.material.navigation.NavigationView
@@ -46,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
     fun setNavigationDrawerListener(categories: List<Tag>, listener: NavigationView.OnNavigationItemSelectedListener) {
         val menu: Menu = binding.navigationView.menu
-        val categoriesSubMenu = menu.addSubMenu("Categories")
+        val categoriesSubMenu = menu.addSubMenu(getString(R.string.categories))
         categories.forEach {
             categoriesSubMenu.add(it.name)
         }

@@ -1,5 +1,6 @@
 # Giraphy 
-Originally: The 'Super' Gif App
+Originally: The 'Super' Gif App.
+
 I really didn't have any better idea for a name.
 
 This GIF app feeds from the GIPHY API.

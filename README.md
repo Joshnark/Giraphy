@@ -1,7 +1,8 @@
-# The 'Super' Gif App
+# Giraphy 
+Originally: The 'Super' Gif App
 I really didn't have any better idea for a name.
 
-This GIF app feeds from the Giffy API.
+This GIF app feeds from the GIPHY API.
 Its main functionality is to present a list of GIF and allow you to share and add those preferred gifs of yours to favourites.
 
 I did this a long time ago to get an Android Developer Role in Freshworks Studio
